@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>🕵🏾‍♀️ Enola</title>
+
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      type="text/css"
+      media="screen"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-bar">
+      <!--
+        TODO
+          1. Search should be more in the middle
+          1. Icon should be vertically aligned in the middle
+          1. Footer
+      -->
+      <span class="material-symbols-outlined">menu</span>
+      <span>Enola 🕵🏾‍♀️</span>
+      <span style="width: 100%">
+        <input
+          size="70"
+          type="search"
+          placeholder="Search..."
+          incremental="true"
+          name="q"
+        />
+      </span>
+      <a href="https://www.enola.dev"
+        ><span
+          class="material-symbols-outlined"
+          style="float: right; color: #ccc"
+        >
+          help
+        </span></a
+      >
+    </div>
+
+    <div class="main">
+      <div style="float: right; padding-top: 1em">
+        <a href="#">name</a>: <input value="demo" />
+      </div>
+
+      <div style="float: let">
+        <h1>k8s:cluster</h1>
+
+        <span class="material-symbols-outlined"> unfold_more </span>
+        A Kubernetes Cluster is set of <a href="#">Nodes</a> which run
+        <a href="#">Pods</a>, (&hellip;)
+
+        <h2>Dependencies</h2>
+
+        <!-- TODO Maybe later render this as a nice table, with query args as columns -->
+
+        <!-- TODO -->
+        <span class="material-symbols-outlined" style="color: red">
+          error
+        </span>
+        <a href="#">k8s:service?name=minecraft</a>
+
+        <br />
+
+        <span class="material-symbols-outlined" style="color: greenyellow">
+          check_circle
+        </span>
+        <a href="#">k8s:pod?name=mcs-2873</a>
+
+        <p class="proto">server: https://192.168.1.103:6443</p>
+      </div>
+    </div>
+  </body>
+</html>

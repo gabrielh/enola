@@ -88,6 +88,7 @@ class GraphvizGenerator {
             var id = related.getValue().getId();
             md.append(
                     "    "
+<<<<<<< HEAD
                             + "\""
                             + name
                             + "\":\""
@@ -100,6 +101,12 @@ class GraphvizGenerator {
                             + "[dir=forward label=\""
                             + key
                             + "\" color=\"#00440088\"];"
+=======
+                            + "\"" + name + "\":\"" + key + "\""
+                            + " -> "
+                            + "\"" + StringUtil.capitalize(id.getEntity()) + "\":name"
+                            + "[dir=forward label=\""+key+ "\" color=\"#00440088\"];"
+>>>>>>> Added quotes around everything ;-) This will allow to include almost any character in all names.
                             + "\n");
         }
     }
